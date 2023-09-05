@@ -1,7 +1,7 @@
 let ciudad = "Rocha";
 let api_key = "697f098a72f15eb12bc95b17cd8e13b6";
 
-let weather_url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${api_key}`;
+let weather_url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${api_key}`;
 
 fetch(weather_url)
   .then((response) => {
@@ -16,5 +16,5 @@ fetch(weather_url)
     let temperaturaEnCelsius = temperaturaEnKelvin - 273;
     let objetoClima = document.getElementById("parrafo");
     objetoClima.innerHTML = `El clima en ${ciudad} es ${clima} con una temperatura de ${temperaturaEnCelsius}°C.`;
-    console.log(`El clima en ${ciudad} es ${clima} con una temperatura de ${temperaturaEnCelsius}°C.`)
+    console.log(`El clima en ${ciudad} es ${clima} con una temperatura de ${temperaturaEnCelsius}°C.`);
   });
