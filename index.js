@@ -16,4 +16,5 @@ fetch(weather_url)
     let temperaturaEnCelsius = temperaturaEnKelvin - 273;
     let objetoClima = document.getElementById("parrafo");
     objetoClima.innerHTML = `El clima en ${ciudad} es ${clima} con una temperatura de ${temperaturaEnCelsius}°C.`;
+    console.log(`El clima en ${ciudad} es ${clima} con una temperatura de ${temperaturaEnCelsius}°C.`)
   });
